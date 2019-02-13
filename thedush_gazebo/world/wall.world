@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+<model name= "wall">
+  	<pose>0.0 5.0 0.0 0 0 0</pose>
+
+	<link name ="link">
+<collision name ="collision">
+	<geometry>
+	<box> 
+		<size>10.0 0.2 0.7</size>
+	</box>
+	</geometry>
+	</collision>
+<visual name= "visual">
+	<geometry>
+	<box> 
+		<size>10.0 0.2 0.7</size>
+	</box>
+	</geometry>
+	
+<material>
+<ambient>1 0 0 1</ambient>
+<diffuse>1 0 0 1</diffuse>
+<specular>0.1 0.1 0.1 1</specular>
+<emissive>0 0 0 0</emissive>
+</material>
+</visual>
+</link>
+</model>
+
+
+<model name= "wall1">
+  	<pose>0.0 -5.0 0.0 0 0 0</pose>
+
+	<link name ="link">
+<collision name ="collision">
+	<geometry>
+	<box> 
+		<size>10.0 0.2 0.7</size>
+	</box>
+	</geometry>
+	</collision>
+<visual name= "visual">
+	<geometry>
+	<box> 
+		<size>10.0 0.2 0.7</size>
+	</box>
+	</geometry>
+	
+<material>
+<ambient>1 0 0 1</ambient>
+<diffuse>1 0 0 1</diffuse>
+<specular>0.1 0.1 0.1 1</specular>
+<emissive>0 0 0 0</emissive>
+</material>
+</visual>
+</link>
+</model>
+
+
+<model name= "wall2">
+  	<pose>-5.0 0.0 0.0 0 0 1.5708</pose>
+
+	<link name ="link">
+<collision name ="collision">
+	<geometry>
+	<box> 
+		<size>10.0 0.2 0.7</size>
+	</box>
+	</geometry>
+	</collision>
+<visual name= "visual">
+	<geometry>
+	<box> 
+		<size>10.0 0.2 0.7</size>
+	</box>
+	</geometry>
+	
+<material>
+<ambient>1 0 0 1</ambient>
+<diffuse>1 0 0 1</diffuse>
+<specular>0.1 0.1 0.1 1</specular>
+<emissive>0 0 0 0</emissive>
+</material>
+</visual>
+</link>
+</model>
+
+
+<model name= "wall3">
+  	<pose>5.0 0.0 0.0 0 0 1.5708</pose>
+
+	<link name ="link">
+<collision name ="collision">
+	<geometry>
+	<box> 
+		<size>10.0 0.2 0.7</size>
+	</box>
+	</geometry>
+	</collision>
+<visual name= "visual">
+	<geometry>
+	<box> 
+		<size>10.0 0.2 0.7</size>
+	</box>
+	</geometry>
+	
+<material>
+<ambient>1 0 0 1</ambient>
+<diffuse>1 0 0 1</diffuse>
+<specular>0.1 0.1 0.1 1</specular>
+<emissive>0 0 0 0</emissive>
+</material>
+</visual>
+</link>
+</model>
+
+</world>
+</sdf>
+ 
